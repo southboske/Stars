@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="SwT-UV-8ZE">
+                                <rect key="frame" x="178" y="181" width="244" height="237"/>
+                                <color key="backgroundColor" red="0.0039215686274509803" green="0.0039215686274509803" blue="0.0039215686274509803" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="237" id="Pss-HZ-SFg"/>
+                                    <constraint firstAttribute="width" constant="244" id="hPp-HH-ogg"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0039215686269999999" green="0.0039215686269999999" blue="0.0039215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="SwT-UV-8ZE" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="VIv-wv-xnL"/>
+                            <constraint firstItem="SwT-UV-8ZE" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="VhF-I9-O3e"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="313" y="322"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="star" width="230" height="219"/>
+    </resources>
+</document>
