@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TweeterSoleMio" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="vgy-vw-Ojp">
+                                <rect key="frame" x="20" y="191" width="560" height="70"/>
+                                <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="560" id="Bha-a0-O6I"/>
+                                    <constraint firstAttribute="height" constant="70" id="na2-ab-6U8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v7c-rE-WV7">
+                                <rect key="frame" x="175" y="69" width="405" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="405" id="M79-Yf-iLb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your Text" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ErN-MR-d9u">
+                                <rect key="frame" x="20" y="69" width="129" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="129" id="gRL-eS-UKT"/>
+                                    <constraint firstAttribute="height" constant="30" id="ygy-ny-3yU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NgV-s8-RSO">
+                                <rect key="frame" x="93" y="350" width="414" height="80"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="414" id="jvV-56-G5g"/>
+                                    <constraint firstAttribute="height" constant="80" id="mhA-aS-WjC"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Tweeterizer">
+                                            <attributes>
+                                                <font key="NSFont" size="35" name="BodoniSvtyTwoSCITCTT-Book"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="tweet:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HS2-tX-TgU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.74520216780000004" green="0.88215039250000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="v7c-rE-WV7" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="49" id="0ej-JD-7DK"/>
+                            <constraint firstItem="NgV-s8-RSO" firstAttribute="top" secondItem="vgy-vw-Ojp" secondAttribute="bottom" constant="89" id="CIX-Bp-s4o"/>
+                            <constraint firstItem="ErN-MR-d9u" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="CNO-zM-4p3"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="NgV-s8-RSO" secondAttribute="trailing" constant="73" id="H7M-3G-Ufb"/>
+                            <constraint firstItem="vgy-vw-Ojp" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Khi-DQ-TNZ"/>
+                            <constraint firstItem="vgy-vw-Ojp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Nfs-zy-Acg"/>
+                            <constraint firstItem="NgV-s8-RSO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="73" id="ORp-D3-pNh"/>
+                            <constraint firstItem="v7c-rE-WV7" firstAttribute="leading" secondItem="ErN-MR-d9u" secondAttribute="trailing" constant="26" id="dis-4R-Db0"/>
+                            <constraint firstItem="ErN-MR-d9u" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="49" id="don-nX-23d"/>
+                            <constraint firstItem="vgy-vw-Ojp" firstAttribute="top" secondItem="ErN-MR-d9u" secondAttribute="bottom" constant="92" id="kT2-it-KOi"/>
+                            <constraint firstItem="v7c-rE-WV7" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="mos-Go-26C"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="operand1" destination="v7c-rE-WV7" id="wQa-we-lBF"/>
+                        <outlet property="textView" destination="vgy-vw-Ojp" id="1ua-nv-pHw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="350"/>
+        </scene>
+    </scenes>
+</document>
